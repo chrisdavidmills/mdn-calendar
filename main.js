@@ -11,7 +11,7 @@ const headings = document.querySelectorAll('h2');
 const articles = document.querySelectorAll('article');
 
 for(let i = 0; i < headings.length; i++) {
-  const randomColor = `rgb(${random(0,100)},${random(0,150)},${random(0,200)})`;
+  const randomColor = `rgb(${random(200,250)},${random(150,250)},${random(200,250)})`;
   headings[i].style.background = randomColor;
   articles[i].style.borderColor = randomColor;
 }
