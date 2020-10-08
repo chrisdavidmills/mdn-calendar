@@ -1,0 +1,60 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Zilla bold";
+  src: url("fonts/ZillaSlab-Bold.woff2") format("woff2");
+}
+
+/* Basic page setup */
+
+/* Typography */
+
+html {
+  font-family: sans-serif;
+}
+
+h1, h2, summary {
+  font-family: "Zilla bold";
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  background: rgba(150,50,200);
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+summary {
+  font-size: 1.4rem;
+}
+
+/*Layout */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: 250px;
+}
+
+article {
+  border: 3px solid black;
+  min-width: 300px;
+  position: relative;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+article div {
+  padding: 10px 20px;
+}
